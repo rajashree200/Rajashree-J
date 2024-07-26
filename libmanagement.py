@@ -28,8 +28,8 @@ class Library:
             print(book)
 
 def get_book_details():
-    title = input("Enter book title: ")
-    author = input("Enter book author: ")
+    title = input("Enter title: ")
+    author = input("Enter author: ")
     while True:
         isbntemp = input("Enter 13-digit ISBN number: ")
         if len(isbntemp)==13:
@@ -68,7 +68,7 @@ if __name__ == "__main__":
         elif action==5:
             library.display_books()
         elif action==6:
-            print("program over")
+            print("over")
             break
         else:
-            print("Invalid choice. Please try again.")
+            print("Invalid choice")
